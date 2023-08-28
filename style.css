@@ -1,0 +1,250 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+/* Navigation Bar:Logo and Image */
+#logo{
+    margin: 10px 20px;
+}
+#logo img{
+    margin: 18px 11px;
+    height: 56px;
+}
+
+
+/* Navigation Bar:List Styling */
+#navbar ul{
+    display: flex;
+    font-family: 'Caveat', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3em;
+    position: sticky;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height:344px;
+    font-family: 'Satisfy', cursive;
+
+}
+#home::before{
+    content: "";
+    background:url('bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88;
+    top: 0px;
+    left: 0px;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid rgb(197, 218, 9);
+    margin: 3px 42px;
+    padding: 34px;
+    border-radius: 30px;
+    /* background-color: rgb(rgb(103, 11, 11), green, blue); */
+    background-color: beige;
+}
+#services .box img{
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-family: 'Satisfy', cursive;
+}
+
+
+
+/* Clients Section */
+
+#client-section{
+    /* height: 344px; */
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('bg4.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 150px;
+}
+.client-items{
+    padding: 34px;
+}
+
+/* Contact Section */
+#Contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background:url('bg5.jpg') no-repeat center center/cover;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 50%;
+}
+#contact-box label{
+    font-size: 1.4rem;
+    font-family: 'Pacifico', cursive;
+}
+#contact-box input,
+
+
+#contact-box textarea{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-family: 'Pacifico', cursive;
+}
+ #contact-box .btn1{
+    display: block;
+    margin: auto;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+   
+    /* align-items: center;  */
+    text-align: center;
+}
+#contact-box .btn1:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Class */
+.h-primary{
+    font-size: 2.8em;
+    padding: 12px;
+    font-family: 'Satisfy', cursive;
+    
+}
+.h-secondary{
+    font-size: 1.8em;
+    padding: 12px;
+    font-family: 'Satisfy', cursive;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+    /* text-align: center; */
+}
+.btn:hover{
+    background-color: antiquewhite;
+    color: black;
+    
+}
+.center{
+    text-align: center;
+    /* font-family: 'Satisfy', cursive; */
+}
+
+  
